@@ -1,0 +1,15 @@
+! pip install CHAID
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.tree import DecisionTreeClassifier,export_graphviz 
+from sklearn.model_selection import train_test_split, cross_val_score
+from statsmodels.discrete.discrete_model import Logit
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import recall_score, roc_auc_score, roc_curve, accuracy_score
+from sklearn.preprocessing import StandardScaler
+from CHAID import Tree
